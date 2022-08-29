@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project 96</title>
+        <link rel="stylesheet" type="text/css" href="kwitter_page.css">
+        <script src="kwitter_page.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    </head>
+    <body style="background-color:rgb(68, 16, 68);height: 100%; margin: 0;">
+        <button id="logout" onclick="loguot()" class="glyphicon glyphicon-log-out &nbsp;&nbsp; btn btn-danger" style="height: 40px; width: 80px; background-color: crimson; text-decoration-color: aliceblue;">Logout</button>
+      <br><br><br>
+        <center>
+            <h1 style="color: white;">CHAT BOX
+            <sup>
+                <img src="violettBird.png" height="50" width="100">
+            </sup>
+        </h1>
+        <br><br>
+    </center>
+    <center>
+            <div style="text-align: bottom; width: 700px; color: white;" id="output" class="bg-white"></div>
+            <br>
+            <input type="text" id="input_message" placeholder="Message">
+            <br><br>
+            <button onclick="send();" class="btn btn-info">Send</button>
+        </center>
+      
+    </body>
+</html>
